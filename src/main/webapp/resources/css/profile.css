@@ -1,0 +1,175 @@
+.profile__container {
+    padding: 3rem 0;
+}
+.profile__selector {
+    background-color: #ffffff;
+    border: 0.2rem solid #d3d3d3;
+    border-radius: 0.6rem;
+    padding-bottom: 3rem;
+    margin-top: -1.7rem;
+    overflow: hidden;
+}
+.profile__header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 7rem;
+}
+.profile__header-top {
+    height: 6rem;
+    background-color: #d3d3d3;
+}
+.profile__header-bot {
+    height: 6rem;
+    background-color: #ffffff;
+}
+.profile__header-avt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-size: 7rem;
+    color: #030303;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.profile__header-username {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: max-content;
+    font-size: 2.5rem;
+    font-weight: 500;
+    left: 50%;
+    bottom: -35%;
+    transform: translateX(-50%);
+}
+.profile__header-username span:first-child {
+    margin-bottom: 1rem;
+}
+.profile__header-username .follow-btn {
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(132, 152, 208, 0.1);
+}
+.profile__selector-item {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1.2rem 2rem;
+    margin: 0 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(132, 152, 208, 0.1);
+}
+.profile__selector-item:last-child {
+    margin-bottom: 0;
+}
+#info-user {
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(250, 149, 84, 0.8);
+}
+.profile__info {
+    position: relative;
+    background-color: #ffffff;
+    border: 0.2rem solid #FA9554;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(132, 152, 208, 0.1);
+}
+.profile__info-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-0.2rem, -1.9rem);
+    width: max-content;
+    height: 3.6rem;
+    line-height: 2.2;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #FA9554;
+    padding:0 2rem;
+    margin-bottom: 2rem;
+}
+.profile__info-title:after {
+    position: absolute;
+    content: "";
+    border: 1.8rem solid;
+    border-color: transparent transparent transparent #FA9554;
+    top: 0;
+    left: 100%;
+}
+.profile__info-user {
+    padding: 5rem;
+}
+.profile__info-user-item {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+.profile__info-user-item:last-child {
+    margin-bottom: 0;
+}
+.profile__info-user-item span {
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.profile__info-follower {
+    display: none;
+    position: relative;
+    height: 30rem;
+    padding: 2rem 0;
+    overflow: scroll;
+}
+.profile__info-follower a {
+    margin: 2rem auto;
+    display: block;
+    width: max-content;
+    border-radius: 5rem;
+}
+.follower__item {
+    width: max-content;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #FA9554;
+    transition: linear 0.15s;
+}
+.follower__item:hover {
+    background-color: #FA9554;
+    color: #ffffff;
+}
+.profile__info-product {
+    display: none;
+    position: relative;
+    margin: 5rem 0;
+}
+.profile__info-loveproduct {
+    display: none;
+    position: relative;
+    margin: 5rem 0;
+}
+.profile__info-product-list {
+    margin: 1.2rem;
+}
+.profile__noproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.profile__noproduct img {
+    width: 12rem;
+}
+.profile__noproduct span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #a0a0a0;
+}

@@ -1,0 +1,113 @@
+.add-product__container {
+    display: block;
+}
+.add-product__success {
+    display: none;
+}
+.add-product__success {
+    width: max-content;
+    margin: 10rem auto;
+    padding: 10rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    border: 1px solid #FA9554;
+}
+.add-product__success span {
+    cursor: pointer;
+    color: #FA9554;
+}
+.add-product__success a {
+    color: #FA9554;
+}
+.add-product__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 2rem 0 4rem 0;
+}
+.add-product__form {
+    position: relative;
+    display: flex;
+    padding: 5rem 5rem 14rem 5rem;
+    background-color: #ffffff;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(132, 152, 208, 0.1);
+}
+.add-product__form-child {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+.add-product__form label {
+    width: max-content;
+    font-size: 1.4rem;
+    color: #838a92;
+    margin-bottom: 0.6rem;
+    font-weight: 300;
+}
+.add-product__form input {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: var(--inputBackground-color);
+    border: 0.1rem solid #838a92;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    height: 4rem;
+    width: 100%;
+}
+.add-product__form select {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: var(--inputBackground-color);
+    border: 0.1rem solid #838a92;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    height: 4rem;
+    width: 100%;
+}
+.add-product__form textarea {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: var(--inputBackground-color);
+    border: 0.1rem solid #838a92;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    resize: none;
+}
+.add-product__form-action {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-10rem, -5rem);
+    display: flex;
+}
+.add-product__form-submit {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 1.2rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+.add-product__form-recreate {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d3d3d3;
+    padding: 1.2rem 2rem;
+    margin-right: 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}

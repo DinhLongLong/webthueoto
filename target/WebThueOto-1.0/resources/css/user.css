@@ -1,0 +1,65 @@
+.profile__info-user-list {
+    position: relative;
+}
+.profile__info-btn {
+    position: absolute;
+}
+.profile__info-btn div {
+    width: max-content;
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 0.6rem 0.4rem rgba(132, 152, 208, 0.1);
+}
+.profile__info-user .profile__info-btn {
+    right: 0;
+    bottom: 0;
+}
+#info-user-change {
+    display: none;
+    flex-direction: column;
+    padding-bottom: 8rem;
+}
+#info-user-change label {
+    font-size: 1.4rem;
+    color: #838a92;
+    margin-bottom: 0.6rem;
+    font-weight: 300;
+}
+#info-user-change input {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: var(--inputBackground-color);
+    border: 0.1rem solid #838a92;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    height: 4rem;
+    width: 100%;
+}
+#info-user-change:focus {
+    outline: 0.1rem solid #333333;
+}
+#info-user-change input:last-child {
+    margin-bottom: 0;
+}
+#info-user-change .profile__info-btn {
+    display: flex;
+}
+#info-user-change .profile__info-btn .cancel-btn {
+    margin-right: 1rem;
+}
+.profile__info-product-list {
+    position: relative;
+}
+.profile__info-product-list .profile__info-btn {
+    left: 50%;
+    bottom: calc(0% - 1.8rem);
+    transform: translateX(-50%);
+}
+.profile__noproduct {
+    padding: 5rem 0;
+}

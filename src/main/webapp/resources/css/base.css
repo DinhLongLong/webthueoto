@@ -1,0 +1,162 @@
+:root {
+    --background-color: #eef0f4;
+    --backgroundProduct-color: #ffffff;
+    --text-color: #333333;
+    --primarybtn-color: linear-gradient(220.47deg,#41b93e -21.4%,#2b7c29 76.01%);
+    --inputBackground-color: #ededed;
+}
+* {
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn:hover.btn::before {
+    transition: all ease-out 0.55s;
+    right: -60%;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 125%;
+    transform: skew(-40deg);
+    background: linear-gradient(to left, rgba(255,255,255,0.3), transparent);
+}
+.primary-btn {
+    background: var(--primarybtn-color);
+}
+.defaul-btn {
+    background-color: #d3d3d3;
+}
+
+/*Grid System*/
+
+.grid {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+.wide {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.l-0 {
+    display: none;
+}
+.l-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.l-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.l-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.l-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.l-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+.l-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.l-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.l-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.l-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.l-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.l-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+.l-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Animation */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes NewComment {
+    0% {
+        background-color: #ffffff;
+    }
+    50% {
+        background-color: #fe9745;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="modal" value="/WEB-INF/layout/modal.jsp"/>
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+    
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/products.jsp"/>
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp"/>
+    </definition>
+    
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp"/>
+    </definition>
+    
+    <definition name="productDetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/productDetail.jsp"/>
+    </definition>
+    
+    <definition name="profile" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin người dùng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/profile.jsp"/>
+    </definition>
+    
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="Trang cá nhân"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/user.jsp"/>
+    </definition>
+    
+    <definition name="addProduct" extends="baseLayout">
+        <put-attribute name="title" value="Đăng bài cho thuê"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/addProduct.jsp"/>
+    </definition>
+    
+    <definition name="productOrder" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận thuê xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/productOrder.jsp"/>
+    </definition>
+    
+    <definition name="admin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý hệ thống"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin.jsp"/>
+    </definition>
+    
+</tiles-definitions>
